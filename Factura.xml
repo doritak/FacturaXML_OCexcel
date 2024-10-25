@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EnvioDTE xsi:schemaLocation='http://www.sii.cl/SiiDte EnvioDTE_v10.xsd' version='1.0' xmlns='http://www.sii.cl/SiiDte' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+  <SetDTE ID='ID83574800-6__1__33__1221130'>
+    <Caratula version='1.0'>
+      <RutEmisor>83574800-6</RutEmisor>
+      <RutEnvia>23394421-1</RutEnvia>
+      <RutReceptor>76191983-0</RutReceptor>
+      <FchResol>2011-06-29</FchResol>
+      <NroResol>83</NroResol>
+      <TmstFirmaEnv>2024-10-24T14:50:38</TmstFirmaEnv>
+      <SubTotDTE>
+        <TpoDTE>33</TpoDTE>
+        <NroDTE>1</NroDTE>
+      </SubTotDTE>
+    </Caratula>
+    <DTE version='1.0'>
+      <Documento ID='F1221130T33'>
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>33</TipoDTE>
+            <Folio>1221130</Folio>
+            <FchEmis>2024-10-24</FchEmis>
+            <FmaPago>2</FmaPago>
+            <TermPagoCdg>25</TermPagoCdg>
+            <TermPagoGlosa>CREDITO  60 DIAS</TermPagoGlosa>
+            <FchVenc>2024-12-23</FchVenc>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>83574800-6</RUTEmisor>
+            <RznSoc>PATRICIO LIOI Y CIA SPA</RznSoc>
+            <GiroEmis>FABRI. IMPORT. EXPORT. Y VENTA DE PROD.</GiroEmis>
+            <Telefono>4895500</Telefono>
+            <Acteco>259100</Acteco>
+            <DirOrigen>SANTA MARTA 2100</DirOrigen>
+            <CmnaOrigen>MAIPU</CmnaOrigen>
+            <CiudadOrigen>SANTIAGO</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>76191983-0</RUTRecep>
+            <RznSocRecep>FERRETERIA SAN CARLOS LTDA.</RznSocRecep>
+            <GiroRecep>FERRETERIA</GiroRecep>
+            <DirRecep>CALLE TAL TAL 768</DirRecep>
+            <CmnaRecep>ANTOFAGASTA</CmnaRecep>
+            <CiudadRecep>ANTOFAGASTA</CiudadRecep>
+            <DirPostal>CALLE TAL TAL 768</DirPostal>
+            <CmnaPostal>ANTOFAGASTA</CmnaPostal>
+            <CiudadPostal>ANTOFAGASTA</CiudadPostal>
+          </Receptor>
+          <Transporte>
+            <DirDest>CALLE TAL TAL 768</DirDest>
+            <CmnaDest>ANTOFAGASTA</CmnaDest>
+            <CiudadDest>ANTOFAGASTA</CiudadDest>
+          </Transporte>
+          <Totales>
+            <MntNeto>1213231</MntNeto>
+            <TasaIVA>19.00</TasaIVA>
+            <IVA>230514</IVA>
+            <MntTotal>1443745</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>011313134</VlrCodigo>
+          </CdgItem>
+          <NmbItem>BISAGRA L290 31/2 X 31/2'' A.INOX SAT. C/TORN.</NmbItem>
+          <QtyItem>24.000000</QtyItem>
+          <PrcItem>3705.000000</PrcItem>
+          <DescuentoPct>45.00</DescuentoPct>
+          <DescuentoMonto>40014</DescuentoMonto>
+          <MontoItem>48906</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>2</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>011313132</VlrCodigo>
+          </CdgItem>
+          <NmbItem>BISAGRA L290 3x3 A.INOX SAT C/TORN.</NmbItem>
+          <QtyItem>24.000000</QtyItem>
+          <PrcItem>2905.000000</PrcItem>
+          <DescuentoPct>45.00</DescuentoPct>
+          <DescuentoMonto>31374</DescuentoMonto>
+          <MontoItem>38346</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>3</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>010411239</VlrCodigo>
+          </CdgItem>
+          <NmbItem>BISAGRA L84 2X2'' A. ZN C/T DP 2 U</NmbItem>
+          <QtyItem>36.000000</QtyItem>
+          <PrcItem>1205.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>19373</DescuentoMonto>
+          <MontoItem>24006</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>4</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>010411263</VlrCodigo>
+          </CdgItem>
+          <NmbItem>BISAGRA L84 31/2 X 3'' A. ZN C/T DP 2 U</NmbItem>
+          <QtyItem>24.000000</QtyItem>
+          <PrcItem>2810.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>30118</DescuentoMonto>
+          <MontoItem>37321</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>5</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>050923010</VlrCodigo>
+          </CdgItem>
+          <NmbItem>CADENA ESLABON CORTO 4mmX61</NmbItem>
+          <QtyItem>61.000000</QtyItem>
+          <PrcItem>1551.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>42253</DescuentoMonto>
+          <MontoItem>52358</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>6</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>050923015</VlrCodigo>
+          </CdgItem>
+          <NmbItem>CADENA ESLABON CORTO 5mmX61</NmbItem>
+          <QtyItem>61.000000</QtyItem>
+          <PrcItem>2464.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>67125</DescuentoMonto>
+          <MontoItem>83178</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>7</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>203812900</VlrCodigo>
+          </CdgItem>
+          <NmbItem>CANCAMO CERRADO N 9</NmbItem>
+          <QtyItem>2.000000</QtyItem>
+          <PrcItem>29250.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>26126</DescuentoMonto>
+          <MontoItem>32374</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>8</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>052610730</VlrCodigo>
+          </CdgItem>
+          <NmbItem>CANDADO SERIE P-1000 30 MM ACERO PINTADO</NmbItem>
+          <QtyItem>60.000000</QtyItem>
+          <PrcItem>1850.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>49572</DescuentoMonto>
+          <MontoItem>61427</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>9</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>052610740</VlrCodigo>
+          </CdgItem>
+          <NmbItem>CANDADO SERIE P-1000 40 MM ACERO PINTADO</NmbItem>
+          <QtyItem>60.000000</QtyItem>
+          <PrcItem>2280.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>61094</DescuentoMonto>
+          <MontoItem>75705</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>10</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>052610750</VlrCodigo>
+          </CdgItem>
+          <NmbItem>CANDADO SERIE P-1000 50 MM ACERO PINTADO</NmbItem>
+          <QtyItem>36.000000</QtyItem>
+          <PrcItem>3490.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>56110</DescuentoMonto>
+          <MontoItem>69529</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>11</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>051180110</VlrCodigo>
+          </CdgItem>
+          <NmbItem>CERROJO  CARCELERO Nº1981 10'' A. ZN   BL 1 U</NmbItem>
+          <QtyItem>12.000000</QtyItem>
+          <PrcItem>10116.300000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>54213</DescuentoMonto>
+          <MontoItem>67180</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>12</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>052702960</VlrCodigo>
+          </CdgItem>
+          <NmbItem>CHALECO GEOLOGO CANVAS AZUL T/L</NmbItem>
+          <QtyItem>10.000000</QtyItem>
+          <PrcItem>9273.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>41413</DescuentoMonto>
+          <MontoItem>51317</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>13</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>051057360</VlrCodigo>
+          </CdgItem>
+          <NmbItem>ESCUADRA ESTANTE 12 X 14". BLANCO</NmbItem>
+          <QtyItem>40.000000</QtyItem>
+          <PrcItem>2123.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>37925</DescuentoMonto>
+          <MontoItem>46995</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>14</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>051057302</VlrCodigo>
+          </CdgItem>
+          <NmbItem>ESCUADRA ESTANTE 5 X 6" BLANCO</NmbItem>
+          <QtyItem>20.000000</QtyItem>
+          <PrcItem>550.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>4912</DescuentoMonto>
+          <MontoItem>6087</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>15</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>051057311</VlrCodigo>
+          </CdgItem>
+          <NmbItem>ESCUADRA ESTANTE 6 X 8" BLANCO</NmbItem>
+          <QtyItem>20.000000</QtyItem>
+          <PrcItem>730.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>6520</DescuentoMonto>
+          <MontoItem>8080</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>16</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>051051150</VlrCodigo>
+          </CdgItem>
+          <NmbItem>ESCUADRA SILLA 1'' A. ZINCADO 1 U</NmbItem>
+          <QtyItem>240.000000</QtyItem>
+          <PrcItem>216.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>23151</DescuentoMonto>
+          <MontoItem>28688</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>17</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>051051260</VlrCodigo>
+          </CdgItem>
+          <NmbItem>ESCUADRA SILLA 3'' A. ZINCADO 1 U</NmbItem>
+          <QtyItem>288.000000</QtyItem>
+          <PrcItem>375.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>48232</DescuentoMonto>
+          <MontoItem>59767</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>18</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>053000185</VlrCodigo>
+          </CdgItem>
+          <NmbItem>Guante Nitril-Flex-Haz, LN-500, Talla 9</NmbItem>
+          <QtyItem>60.000000</QtyItem>
+          <PrcItem>1500.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>40194</DescuentoMonto>
+          <MontoItem>49806</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>19</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>053000265</VlrCodigo>
+          </CdgItem>
+          <NmbItem>Guante MultiProtec.Flex Light . PU. Grey, L-1700, Talla 9</NmbItem>
+          <QtyItem>120.000000</QtyItem>
+          <PrcItem>800.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>42873</DescuentoMonto>
+          <MontoItem>53126</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>20</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>050962231</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PICAPORTE BASE RECTA 1078 2 1/2'' ZINCADO</NmbItem>
+          <QtyItem>48.000000</QtyItem>
+          <PrcItem>1306.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>27996</DescuentoMonto>
+          <MontoItem>34692</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>21</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>050989570</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PICAPORTE C/PERF PARA CANDADO 70MM A. ZN   DP 1 U</NmbItem>
+          <QtyItem>12.000000</QtyItem>
+          <PrcItem>4188.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>22444</DescuentoMonto>
+          <MontoItem>27812</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>22</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>050958300</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PICAPORTE VENTANA CORREDERAS 3'' DP</NmbItem>
+          <QtyItem>60.000000</QtyItem>
+          <PrcItem>2390.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>64042</DescuentoMonto>
+          <MontoItem>79358</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>23</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>051111262</VlrCodigo>
+          </CdgItem>
+          <NmbItem>PORTACANDADO 915 3 1/2'' ZINCADO .</NmbItem>
+          <QtyItem>24.000000</QtyItem>
+          <PrcItem>2231.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>23912</DescuentoMonto>
+          <MontoItem>29631</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>24</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>051337940</VlrCodigo>
+          </CdgItem>
+          <NmbItem>RETEN RODILLO 32x26 mm COBRE VIEJO</NmbItem>
+          <QtyItem>100.000000</QtyItem>
+          <PrcItem>555.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>24786</DescuentoMonto>
+          <MontoItem>30714</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>25</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>051720530</VlrCodigo>
+          </CdgItem>
+          <NmbItem>RUEDA GOMA C/BASE GIRATORIA . 3 ''</NmbItem>
+          <QtyItem>36.000000</QtyItem>
+          <PrcItem>2641.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>42460</DescuentoMonto>
+          <MontoItem>52615</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>26</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>203814260</VlrCodigo>
+          </CdgItem>
+          <NmbItem>TORNILLO ESCUADRA 3''</NmbItem>
+          <QtyItem>3.000000</QtyItem>
+          <PrcItem>13715.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>18375</DescuentoMonto>
+          <MontoItem>22770</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>27</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>050971030</VlrCodigo>
+          </CdgItem>
+          <NmbItem>TRANCA 2 1/2" cinc.</NmbItem>
+          <QtyItem>36.000000</QtyItem>
+          <PrcItem>810.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>13022</DescuentoMonto>
+          <MontoItem>16137</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>28</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>052700420</VlrCodigo>
+          </CdgItem>
+          <NmbItem>FAJA LUMBAR BUFALO TALLA M</NmbItem>
+          <QtyItem>1.000000</QtyItem>
+          <PrcItem>7689.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>3433</DescuentoMonto>
+          <MontoItem>4255</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>29</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>011050030</VlrCodigo>
+          </CdgItem>
+          <NmbItem>POMEL 5/8 X 30 X 97 C/ALA 1U</NmbItem>
+          <QtyItem>24.000000</QtyItem>
+          <PrcItem>1585.000000</PrcItem>
+          <DescuentoPct>44.66</DescuentoPct>
+          <DescuentoMonto>16988</DescuentoMonto>
+          <MontoItem>21051</MontoItem>
+        </Detalle>
+        <Referencia>
+          <NroLinRef>1</NroLinRef>
+          <TpoDocRef>801</TpoDocRef>
+          <FolioRef>6791</FolioRef>
+          <FchRef>2024-10-24</FchRef>
+        </Referencia>
+        <Referencia>
+          <NroLinRef>2</NroLinRef>
+          <TpoDocRef>802</TpoDocRef>
+          <FolioRef>1038872</FolioRef>
+          <FchRef>2024-10-23</FchRef>
+        </Referencia>
+        <Referencia>
+          <NroLinRef>3</NroLinRef>
+          <TpoDocRef>801</TpoDocRef>
+          <FolioRef>6791</FolioRef>
+          <FchRef>2024-10-24</FchRef>
+        </Referencia>
+        <TED version='1.0'>
+          <DD>
+            <RE>83574800-6</RE>
+            <TD>33</TD>
+            <F>1221130</F>
+            <FE>2024-10-24</FE>
+            <RR>76191983-0</RR>
+            <RSR>FERRETERIA SAN CARLOS LTDA.</RSR>
+            <MNT>1443745</MNT>
+            <IT1>BISAGRA L290 31/2 X 31/2'' A.INOX SAT. C</IT1>
+            <CAF version='1.0'>
+              <DA>
+                <RE>83574800-6</RE>
+                <RS>PATRICIO LIOI Y CIA SPA</RS>
+                <TD>33</TD>
+                <RNG>
+                  <D>1201234</D>
+                  <H>1221233</H>
+                </RNG>
+                <FA>2024-06-28</FA>
+                <RSAPK>
+                  <M>rMriye4Y1pj5/manx3qHl/mTAJVktPjCsIVUQ8uEVC477MQBaJdlw5e8uuO4gMjikdhroIw3ePTmgch+M2KtDw==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo='SHA1withRSA'>hE1M4DWbqVibVXdVmx9ZMF+Ev2Zgcgw+JqJRUB/UyFMS8LncttSdSz1Q488RGIriS0l6a8pn3pW6CUU9+MQXPQ==</FRMA>
+            </CAF>
+            <TSTED>2024-10-24T15:44:54</TSTED>
+          </DD>
+          <FRMT algoritmo='SHA1withRSA'>Zgf+d/7ve61+0EXCs6YwIXfOIaEpuiPZ7t8szqwD/TfmyDFGjaDg8AzoYU+BH/rkJuCTYfM/KKIoE4DDdDHNBQ==</FRMT>
+        </TED>
+        <TmstFirma>2024-10-24T15:44:57</TmstFirma>
+      </Documento>
+      <Signature xmlns='http://www.w3.org/2000/09/xmldsig#'>
+        <SignedInfo>
+          <CanonicalizationMethod Algorithm='http://www.w3.org/TR/2001/REC-xml-c14n-20010315'/>
+          <SignatureMethod Algorithm='http://www.w3.org/2000/09/xmldsig#rsa-sha1'/>
+          <Reference URI='#F1221130T33'>
+            <Transforms>
+              <Transform Algorithm='http://www.w3.org/TR/2001/REC-xml-c14n-20010315'/>
+            </Transforms>
+            <DigestMethod Algorithm='http://www.w3.org/2000/09/xmldsig#sha1'/>
+            <DigestValue>h2eV793WaCIVGLE3IWCHg+f9VKY=</DigestValue>
+          </Reference>
+        </SignedInfo>
+        <SignatureValue>
+PWwaXc90F8b71zS42O189DzrDI3jlVhziHf9Peze1oEascWm68qOWSvNMIdb4Cjc
+hga2zSGbAzexbon8aOy4LtI2BmAp4+RQQUZk91vFOmGmWs7nWRAgMh11xZ9+wcts
+0PduY7/aoa3UFeeInm9K85KWRf22zapIYlPF/CzFJ3s=
+</SignatureValue>
+        <KeyInfo>
+          <KeyValue>
+            <RSAKeyValue>
+              <Modulus>
+nin1/MlAsPrKeiB4r80GVLA2vdsgwf62ZJt9JlVNbTWHcqa8q5c6M1XGdj9f7Y7q
+lzwWyj2On51IHhzuSis9BfEIBl1E1gRpWV5wGYZXJDsfP9UKcEVO28Y7M6ithBcN
+aQNjxhCOPrl7l1M7WlSaBT3yVwdkZayj2Ou1qPNUcIE=
+</Modulus>
+              <Exponent>AQAB</Exponent>
+            </RSAKeyValue>
+          </KeyValue>
+          <X509Data>
+            <X509Certificate>
+MIIGOzCCBSOgAwIBAgIKRyOETQAAABes3TANBgkqhkiG9w0BAQUFADCB0jELMAkG
+A1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQH
+EwhTYW50aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9y
+aWRhZCBDZXJ0aWZpY2Fkb3JhMTAwLgYDVQQDEydFLUNFUlRDSElMRSBDQSBGSVJN
+QSBFTEVDVFJPTklDQSBTSU1QTEUxJzAlBgkqhkiG9w0BCQEWGHNjbGllbnRlc0Bl
+LWNlcnRjaGlsZS5jbDAeFw0yMTEyMzExNDE4NTFaFw0yNDEyMzAxNDE4NTFaMIG8
+MQswCQYDVQQGEwJDTDEiMCAGA1UECBMZTUVUUk9QT0xJVEFOQSBERSBTQU5USUFH
+TzERMA8GA1UEBxMIU0FOVElBR08xJTAjBgNVBAoTHENPTUVSQ0lBTElaQURPUkEg
+S0JFRU4gTFREQS4xCjAIBgNVBAsMASoxJDAiBgNVBAMTG01BUklBIERFTCBQSUxB
+UiBMSU9JIENPVEVSQTEdMBsGCSqGSIb3DQEJARYOSkNMQVJBQExJT0kuQ0wwgZ8w
+DQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJ4p9fzJQLD6ynogeK/NBlSwNr3bIMH+
+tmSbfSZVTW01h3KmvKuXOjNVxnY/X+2O6pc8Fso9jp+dSB4c7korPQXxCAZdRNYE
+aVlecBmGVyQ7Hz/VCnBFTtvGOzOorYQXDWkDY8YQjj65e5dTO1pUmgU98lcHZGWs
+o9jrtajzVHCBAgMBAAGjggKpMIICpTCCAU8GA1UdIASCAUYwggFCMIIBPgYIKwYB
+BAHDUgUwggEwMC0GCCsGAQUFBwIBFiFodHRwOi8vd3d3LmUtY2VydGNoaWxlLmNs
+L0NQUy5odG0wgf4GCCsGAQUFBwICMIHxHoHuAEUAbAAgAHIAZQBzAHAAbwBuAGQA
+ZQByACAAZQBzAHQAZQAgAGYAbwByAG0AdQBsAGEAcgBpAG8AIABlAHMAIAB1AG4A
+IAByAGUAcQB1AGkAcwBpAHQAbwAgAGkAbgBkAGkAcwBwAGUAbgBzAGEAYgBsAGUA
+IABwAGEAcgBhACAAZABhAHIAIABpAG4AaQBjAGkAbwAgAGEAbAAgAHAAcgBvAGMA
+ZQBzAG8AIABkAGUAIABjAGUAcgB0AGkAZgBpAGMAYQBjAGkA8wBuAC4AIABQAG8A
+cwB0AGUAcgBpAG8AcgBtAGUAbgB0AGUALDAdBgNVHQ4EFgQUBYPb/yIBSMv1oB2b
+5ClATZ6Ctu4wCwYDVR0PBAQDAgTwMCMGA1UdEQQcMBqgGAYIKwYBBAHBAQGgDBYK
+MDYzNzE3NTctNjAfBgNVHSMEGDAWgBR44T6f0hKzejyNzTAOU7NDKQezVTA+BgNV
+HR8ENzA1MDOgMaAvhi1odHRwOi8vY3JsLmUtY2VydGNoaWxlLmNsL2VjZXJ0Y2hp
+bGVjYUZFUy5jcmwwOgYIKwYBBQUHAQEELjAsMCoGCCsGAQUFBzABhh5odHRwOi8v
+b2NzcC5lY2VydGNoaWxlLmNsL29jc3AwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGC
+NxUIgtyDL4WTjGaF1Z0XguLcJ4Hv7DxhgcueFIaoglgCAWQCAQQwIwYDVR0SBBww
+GqAYBggrBgEEAcEBAqAMFgo5NjkyODE4MC01MA0GCSqGSIb3DQEBBQUAA4IBAQCK
+2MBOJ7WW62MdkN81/9eRao67JEk6OwdhuEfWxh2cwehSTrCigFkTPPYoYKHyTp72
+xeFi9kB4UevrRltPiYG0SNoPBG24LHfhNwbUoyIa0eCy4SgsMIvu24jFWJhQkhpb
+dQtY3L2YlMEWRmrmC4cOyMIPvrJnewYEjmmtpLvrGzxxJJa2SBxPgRq5jkJKjtdj
+pbK+3273C3YJwwVvpkadIpiRyAwrUMI5B7PeJIRzyi05DF5nFvjWpB4xpB+QP1Ow
+CQgsjVGu06IV5XaqFRfLym1iIA/i2jF8MICUAunu4EjhnAOVHeDapbRu+cI9S2re
+jcYePlFiG8OtKkRewD0/
+</X509Certificate>
+          </X509Data>
+        </KeyInfo>
+      </Signature>
+    </DTE>
+  </SetDTE>
+  <Signature xmlns='http://www.w3.org/2000/09/xmldsig#'>
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm='http://www.w3.org/TR/2001/REC-xml-c14n-20010315'/>
+      <SignatureMethod Algorithm='http://www.w3.org/2000/09/xmldsig#rsa-sha1'/>
+      <Reference URI='#ID83574800-6__1__33__1221130'>
+        <Transforms>
+          <Transform Algorithm='http://www.w3.org/TR/2001/REC-xml-c14n-20010315'/>
+        </Transforms>
+        <DigestMethod Algorithm='http://www.w3.org/2000/09/xmldsig#sha1'/>
+        <DigestValue>R9JYgJqzaHhUbWcWHmLjwrsQn/M=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+hn2MhrC3bUPlf7n66DdWCWKihvAPyMkFt5Yi2QR9leL8IgchE0ijBzNEVazTKod8
+5/GvXpEj0/h7uuZSGHuMvOxZEFgQ8S2RP2CUwSSBlUlwy5w6AObn0z4BGFjRSGbO
++b0dOI9Mdr7Rctog24oM3x9sgMSO2jBUZqAuUOA6dgtsl6dBQ7L61CGiaJr5XDt9
+5+a5CuOnTCdvjjETBbxrqHgF4ychdm+l/shEzicP1iEvHIA5jEVwWN5GTO65qUxT
+VkE61Jj3Yf6i6jP1zfwh7ujsnaBAwhlXJh0HJx6PA+ynYq77JpF+8vy8hkvRK8CE
+wrKDoQjcvMxKlQwbOlcIbg==
+</SignatureValue>
+    <KeyInfo>
+      <KeyValue>
+        <RSAKeyValue>
+          <Modulus>
+usPCvnroHTih0Zq+XIr5+uSSNjKm/fbFr4+bOod6plHZjUiXv371RkbeplcPnHAW
+sziJh5dSZV9t7sVJcXWrtCtocpE64LyEhj4e0NOyJN+agZTiRsw48TPX6zVmoMY9
+FkbApndOAYtMfRoZ+bXjDPjwcP4Hz1SZePAbQQ4G1B4ZGCG6cqQERv06gu3rMA6q
+xzR9ymPREL6CZlbZor8nBmCOHfwgwoCr2A7RQPI6PY7BJczYgumKeZvRLcTEUJYP
+JkvypmAJGN2ccf1GSZbEj5gwaPumuUO2Z4dMPjTOOixk812sz6VSGg6G9sCZzXgm
+WP6x5RG8Uu6WKaSuO0DU7Q==
+</Modulus>
+          <Exponent>AQAB</Exponent>
+        </RSAKeyValue>
+      </KeyValue>
+      <X509Data>
+        <X509Certificate>
+MIIGRjCCBS6gAwIBAgIINwdHByfx1pswDQYJKoZIhvcNAQELBQAwga8xCzAJBgNV
+BAYTAkNMMRQwEgYDVQQKDAtFLVNpZ24gUy5BLjE5MDcGA1UECwwwVGVybXMgb2Yg
+dXNlIGF0IHd3dy5lc2lnbi1sYS5jb20vYWN1ZXJkb3RlcmNlcm9zMSswKQYDVQQD
+DCJFLVNpZ24gQ2xhc3MgMiBGaXJtYSBUcmlidXRhcmlhIENBMSIwIAYJKoZIhvcN
+AQkBFhNlLXNpZ25AZXNpZ24tbGEuY29tMB4XDTIzMDIyMzIwMDUwMFoXDTI1MDIy
+MjIwMDUwMFowgaUxCzAJBgNVBAYTAkNMMRQwEgYDVQQKDAtFLVNpZ24gUy5BLjE5
+MDcGA1UECwwwVGVybXMgb2YgdXNlIGF0IHd3dy5lc2lnbi1sYS5jb20vYWN1ZXJk
+b3RlcmNlcm9zMRwwGgYDVQQDDBNKYW5ldHQgTGFyYSAgQ2VpamFzMScwJQYJKoZI
+hvcNAQkBFhhqYW5ldHQubGFyYUBnb3NvY2tldC5uZXQwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQC6w8K+eugdOKHRmr5civn65JI2Mqb99sWvj5s6h3qm
+UdmNSJe/fvVGRt6mVw+ccBazOImHl1JlX23uxUlxdau0K2hykTrgvISGPh7Q07Ik
+35qBlOJGzDjxM9frNWagxj0WRsCmd04Bi0x9Ghn5teMM+PBw/gfPVJl48BtBDgbU
+HhkYIbpypARG/TqC7eswDqrHNH3KY9EQvoJmVtmivycGYI4d/CDCgKvYDtFA8jo9
+jsElzNiC6Yp5m9EtxMRQlg8mS/KmYAkY3Zxx/UZJlsSPmDBo+6a5Q7Znh0w+NM46
+LGTzXazPpVIaDob2wJnNeCZY/rHlEbxS7pYppK47QNTtAgMBAAGjggJsMIICaDCB
+gAYIKwYBBQUHAQEEdDByMEoGCCsGAQUFBzAChj5odHRwOi8vcGtpLmVzaWduLWxh
+LmNvbS9jYWNlcnRzL3BraUNsYXNzMkZpcm1hVHJpYnV0YXJpYUNBLmNydDAkBggr
+BgEFBQcwAYYYaHR0cDovL29jc3AuZXNpZ24tbGEuY29tMB0GA1UdDgQWBBQyF41N
+BjkDRZboLRp8md1pdyMoozAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFPlK+sLH
+bsLnEpxXRTWEGm0o6UqkMIHIBgNVHSAEgcAwgb0wgboGDCsGAQQBgspqAQQBAjCB
+qTB+BggrBgEFBQcCAjByHnAAQwBlAHIAdABpAGYAaQBjAGEAZABvACAAcABhAHIA
+YQAgAHUAcwBvACAAVAByAGkAYgB1AHQAYQByAGkAbwAsACAAQwBvAG0AZQByAGMA
+aQBvACwAIABQAGEAZwBvAHMAIAB5ACAATwB0AHIAbwBzMCcGCCsGAQUFBwIBFhto
+dHRwOi8vd3d3LmVzaWduLWxhLmNvbS9jcHMwUQYDVR0fBEowSDBGoESgQoZAaHR0
+cDovL3BraS5lc2lnbi1sYS5jb20vY3JsL3BraUNsYXNzMkZpcm1hVHJpYnV0YXJp
+YS9lbmR1c2VyLmNybDAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUH
+AwIGCCsGAQUFBwMEMCMGA1UdEQQcMBqgGAYIKwYBBAHBAQGgDBYKMjMzOTQ0MjEt
+MTAjBgNVHRIEHDAaoBgGCCsGAQQBwQECoAwWCjk5NTUxNzQwLUswDQYJKoZIhvcN
+AQELBQADggEBAETqWiWEXSgBshb1GadrRnXhuviOb8izEwYvRLcJYAYFO1ZJ3vDD
+E8MlGNh/QExLRNFHUbr4tJqG4lSjSiWmBJ426mXoJKub70MySod+YFgqrXaiVSmF
+xkCSzM69BwPyFnN0W87KdbuIcfi7A3KJD2MLaxjPE+1LWiq6Gm1kKXJtSam+A2NO
+7cpqRqmwq8y2Wnx2Pjd23Vz8GzPdO9Hx5iu74S+PU/6d9rDd/N5zb/MP2Z1gF6ok
+1pJwpUHEePKrjFETljeVQ18XEJ61oeSoaiOhOdETcjHDyQjPOPZhWikap+EPw3Lu
+DQcPtOO96jy8cMM/q8ZWwLll4nVdEA77fd4=
+</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</EnvioDTE>
