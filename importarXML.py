@@ -30,7 +30,6 @@ def Cargar_datos_XML(ruta_xml):
     FechaEmis = documento.find('ns:Encabezado', namespaces=nsp).find('ns:IdDoc', namespaces=nsp).find('ns:FchEmis', namespaces=nsp).text
     FechaEmis = Calcular_fecha(False, FechaEmis)
     RUT = documento.find('ns:Encabezado', namespaces=nsp).find('ns:Emisor', namespaces=nsp).find('ns:RUTEmisor', namespaces=nsp).text
-    FechaEmis = Calcular_fecha(False, FechaEmis)
     
     # print(nombre_proveedor, Folio,FechaEmis )
     # Extraer datos de cada "detalle" dentro del documento, incluyendo el namespace"
@@ -61,7 +60,7 @@ def Cargar_datos_XML(ruta_xml):
             'Proveedor': nombre_proveedor,
             'Factura':Folio,
             'Fecha': FechaEmis,
-            'Codigo' : SKU,
+            'Código' : SKU,
             'Detalle' : nombre_prod,
             'Cantidad' : cantidad,
             'Precio' : precio,
@@ -129,18 +128,18 @@ def Calcular_fecha(conHora, Fch=None):
 def Nombrar_archivo(proveedor:str,tipo):
     fecha = Calcular_fecha(True)
     if tipo == "Detalle":
-        ruta_excel = fecha + '_Detalle_Productos_' + proveedor.title() + '.xlsx'
+        nombre_archivo = fecha + '_Detalle_Productos_' + proveedor.title() + '.xlsx'
     elif tipo == "DescRec":
-        ruta_excel = fecha + '_Desc_Rec_' + proveedor.title() + '.xlsx'
+        nombre_archivo = fecha + '_Desc_Rec_' + proveedor.title() + '.xlsx'
     elif tipo == "Ref":
-        ruta_excel = fecha + '_Referencia_' + proveedor.title() + '.xlsx'
-    return ruta_excel
+        nombre_archivo = fecha + '_Referencia_' + proveedor.title() + '.xlsx'
+    return nombre_archivo
 
 def Exportar_df_excel(df, tipo, proveedor:str):
-    ruta_excel = Nombrar_archivo(proveedor,tipo)
+    nombre_archivo = Nombrar_archivo(proveedor,tipo)
     # Exportar el DataFrame a Excel
-    df.to_excel(ruta_excel, index=False)
-    print(f"Archivo Excel creado exitosamente en {ruta_excel}")
+    df.to_excel(nombre_archivo, index=False)
+    print(f"Archivo Excel creado exitosamente en {nombre_archivo}")
 
 def Entregar_DataFrames_DTE(ruta_xml):
     df, df_DR, df_R, proveedor = Cargar_datos_XML(ruta_xml)
