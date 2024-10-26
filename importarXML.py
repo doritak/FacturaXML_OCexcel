@@ -1,9 +1,22 @@
 import pandas as pd
 import xml.etree.ElementTree as ET
-import datetime
-############# Voy a necesitar esta desde otro módulo ################
-############ Cargar_datos_XML(ruta_xml)->df, df_DR, df_R, nombre_proveedor
+from miscelaneos.nombrar_archivos import Calcular_fecha
+
 def Cargar_datos_XML(ruta_xml):
+    """
+    Carga y procesa datos desde un archivo XML especificado.
+    Parameters:
+        ruta_xml (str): La ruta del archivo XML a cargar.
+    Returns:
+        tuple: Una tupla que contiene:
+            - df (pd.DataFrame): DataFrame con los datos extraídos del XML.
+            - df_DR (pd.DataFrame): DataFrame con los descuentos y recargos globales.
+            - df_R (pd.DataFrame): DataFrame con las referencias de documentos.
+            - nombre_proveedor (str): Nombre del proveedor extraído del XML.
+    Raises:
+        ValueError: Si no se encuentra el nodo 'Documento' en el XML.
+    """
+    
     # Debo especificar el encoding al abrir el archivo
     with open(ruta_xml, encoding='ISO-8859-1') as file:
         tree = ET.parse(file)
@@ -109,60 +122,9 @@ def Cargar_datos_XML(ruta_xml):
         
     return df, df_DR, df_R, nombre_proveedor
 
-def Calcular_fecha(conHora, Fch=None):
-    
-    if conHora: #Calcula la hora actual, y la entrega con la hora
-        d = datetime.datetime.now()
-        f = [str(d.day), str(d.month), str(d.year)]
-        h = [str(d.hour), str(d.minute), str(d.second)]
-        fecha = f"{'-'.join(f)}_T{'_'.join(h)}"
-    else: #ingresa la fecha en formato "AAAA-MM-DD" un string
-        l = Fch.split('-')
-        dia = l.pop()
-        mes = l.pop()
-        anho = l.pop()
-        l = [dia, mes, anho]
-        fecha = f"{'-'.join(l)}"
-    return fecha
 
-def Nombrar_archivo(proveedor:str,tipo):
-    fecha = Calcular_fecha(True)
-    if tipo == "Detalle":
-        nombre_archivo = fecha + '_Detalle_Productos_' + proveedor.title() + '.xlsx'
-    elif tipo == "DescRec":
-        nombre_archivo = fecha + '_Desc_Rec_' + proveedor.title() + '.xlsx'
-    elif tipo == "Ref":
-        nombre_archivo = fecha + '_Referencia_' + proveedor.title() + '.xlsx'
-    return nombre_archivo
-
-def Exportar_df_excel(df, tipo, proveedor:str):
-    nombre_archivo = Nombrar_archivo(proveedor,tipo)
-    # Exportar el DataFrame a Excel
-    df.to_excel(nombre_archivo, index=False)
-    print(f"Archivo Excel creado exitosamente en {nombre_archivo}")
-
-def Entregar_DataFrames_DTE(ruta_xml):
-    df, df_DR, df_R, proveedor = Cargar_datos_XML(ruta_xml)
-    
-    Exportar_df_excel(df,"Detalle", proveedor)
-    
-    if not df_DR.empty:
-        Exportar_df_excel(df_DR,"DescRec", proveedor)
-    
-    if not df_R.empty:
-        Exportar_df_excel(df_R,"Ref", proveedor)
         
 
 
-if __name__ == "__main__":
-    # Cargo y parseo el archivo xml
-    ruta_xml = "Factura.xml"
-    df, df_DR, df_R, proveedor = Cargar_datos_XML(ruta_xml)
-    
-    Exportar_df_excel(df,"Detalle", proveedor)
-    
-    if not df_DR.empty:
-        Exportar_df_excel(df_DR,"DescRec", proveedor)
-    if not df_R.empty:
-        Exportar_df_excel(df_R,"Ref", proveedor)
+
     

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='ISO-8859-1'?>
 <EnvioDTE xsi:schemaLocation='http://www.sii.cl/SiiDte EnvioDTE_v10.xsd' version='1.0' xmlns='http://www.sii.cl/SiiDte' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-  <SetDTE ID='ID83574800-6__1__33__1221130'>
+  <SetDTE ID='ID55555555-5__1__33__1221130'>
     <Caratula version='1.0'>
       <RutEmisor>83574800-6</RutEmisor>
       <RutEnvia>23394421-1</RutEnvia>
@@ -18,7 +18,7 @@
         <Encabezado>
           <IdDoc>
             <TipoDTE>33</TipoDTE>
-            <Folio>1221130</Folio>
+            <Folio>123456</Folio>
             <FchEmis>2024-10-24</FchEmis>
             <FmaPago>2</FmaPago>
             <TermPagoCdg>25</TermPagoCdg>
@@ -26,30 +26,30 @@
             <FchVenc>2024-12-23</FchVenc>
           </IdDoc>
           <Emisor>
-            <RUTEmisor>83574800-6</RUTEmisor>
-            <RznSoc>PATRICIO LIOI Y CIA SPA</RznSoc>
-            <GiroEmis>FABRI. IMPORT. EXPORT. Y VENTA DE PROD.</GiroEmis>
-            <Telefono>4895500</Telefono>
-            <Acteco>259100</Acteco>
-            <DirOrigen>SANTA MARTA 2100</DirOrigen>
-            <CmnaOrigen>MAIPU</CmnaOrigen>
-            <CiudadOrigen>SANTIAGO</CiudadOrigen>
+            <RUTEmisor>55555555-5</RUTEmisor>
+            <RznSoc>EMPRESA PROVEEDORA SPA</RznSoc>
+            <GiroEmis>FABRI. IMPORT. EXPORT.</GiroEmis>
+            <Telefono>5555555</Telefono>
+            <Acteco>5555555</Acteco>
+            <DirOrigen>DIRECCION EMPRESA</DirOrigen>
+            <CmnaOrigen>COMUNA EMPRESA</CmnaOrigen>
+            <CiudadOrigen>CUIDAID EMPRESA</CiudadOrigen>
           </Emisor>
           <Receptor>
-            <RUTRecep>76191983-0</RUTRecep>
-            <RznSocRecep>FERRETERIA SAN CARLOS LTDA.</RznSocRecep>
-            <GiroRecep>FERRETERIA</GiroRecep>
-            <DirRecep>CALLE TAL TAL 768</DirRecep>
-            <CmnaRecep>ANTOFAGASTA</CmnaRecep>
-            <CiudadRecep>ANTOFAGASTA</CiudadRecep>
-            <DirPostal>CALLE TAL TAL 768</DirPostal>
-            <CmnaPostal>ANTOFAGASTA</CmnaPostal>
-            <CiudadPostal>ANTOFAGASTA</CiudadPostal>
+            <RUTRecep>77777777-7</RUTRecep>
+            <RznSocRecep>EMPRESA CLIENTE</RznSocRecep>
+            <GiroRecep>GIRO CLIENTE</GiroRecep>
+            <DirRecep>DIRECCION CLIENTE</DirRecep>
+            <CmnaRecep>COMUNA CLIENTE</CmnaRecep>
+            <CiudadRecep>CUIDAD CLIENTE</CiudadRecep>
+            <DirPostal>123455</DirPostal>
+            <CmnaPostal>COMUNA LL</CmnaPostal>
+            <CiudadPostal>CUIDAD CL</CiudadPostal>
           </Receptor>
           <Transporte>
-            <DirDest>CALLE TAL TAL 768</DirDest>
-            <CmnaDest>ANTOFAGASTA</CmnaDest>
-            <CiudadDest>ANTOFAGASTA</CiudadDest>
+            <DirDest>DIRECCION CLIENTE</DirDest>
+            <CmnaDest>COMUNA CLIENTE</CmnaDest>
+            <CiudadDest>CUIDAD CLIENTE</CiudadDest>
           </Transporte>
           <Totales>
             <MntNeto>1213231</MntNeto>
@@ -455,18 +455,18 @@
         </Referencia>
         <TED version='1.0'>
           <DD>
-            <RE>83574800-6</RE>
+            <RE>55555555-5</RE>
             <TD>33</TD>
-            <F>1221130</F>
+            <F>123456</F>
             <FE>2024-10-24</FE>
-            <RR>76191983-0</RR>
-            <RSR>FERRETERIA SAN CARLOS LTDA.</RSR>
+            <RR>77777777-7</RR>
+            <RSR>EMPRESA CLIENTE</RSR>
             <MNT>1443745</MNT>
             <IT1>BISAGRA L290 31/2 X 31/2'' A.INOX SAT. C</IT1>
             <CAF version='1.0'>
               <DA>
-                <RE>83574800-6</RE>
-                <RS>PATRICIO LIOI Y CIA SPA</RS>
+                <RE>55555555-5</RE>
+                <RS>EMPRESA PROVEEDORA</RS>
                 <TD>33</TD>
                 <RNG>
                   <D>1201234</D>
