@@ -16,7 +16,8 @@ with open(ruta_xml, encoding='ISO-8859-1') as file:
   tree = ET.parse(file)
   root = tree.getroot()
 ```
-[!IMPORTANT] Se debe definir el namespace que se indica en el formato del XML del SII. Porque sino, no puedes encontrar la rama del Document
+> [!IMPORTANT]
+> Se debe definir el namespace que se indica en el formato del XML del SII. Porque sino, no puedes encontrar la rama del Document
 ```
 # Definir el espacio de nombres
 nsp  = {'ns': 'http://www.sii.cl/SiiDte'}
