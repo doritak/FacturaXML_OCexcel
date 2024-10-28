@@ -40,12 +40,13 @@ def create_gui():
     root = tk.Tk()
     root.title("Seleccionar los archivos ")
     
-    # Establecer un icono personalizado para la ventana
-    ruta_icon_ventana = 'miscelaneos/fsc.ico'  
+    # Establecer un icono personalizado para la ventana '../miscelaneos/fsc.ico'  
+    
+    ruta_icon_ventana = os.path.join(os.path.dirname(__file__), '..', 'CONTROLLER', 'miscelaneos', 'fsc.ico')
     root.iconbitmap(ruta_icon_ventana) 
     
-    # Establecer un icono personalizado para la barra de tareas
-    ruta_icon_taskbar = 'miscelaneos/Fsc_png.png'  
+    # Establecer un icono personalizado para la barra de tareas '../miscelaneos/Fsc_png.png'  
+    ruta_icon_taskbar = os.path.join(os.path.dirname(__file__), '..','CONTROLLER', 'miscelaneos', 'Fsc_png.png')
     imagen_icon_taskbar = tk.PhotoImage(file=ruta_icon_taskbar)
     root.iconphoto(True, imagen_icon_taskbar)
     

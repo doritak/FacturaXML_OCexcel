@@ -1,5 +1,5 @@
-from exportarDf import Exportar_df_excel 
-from importarXML import Cargar_datos_XML
+from CONTROLLER.exportarDf import Exportar_df_excel 
+from CONTROLLER.importarXML import Cargar_datos_XML
 #AQUI sólamente para pruebas de que entrega bien los excel de los dataframes de los XML
 #FUNCIONA BIEN! 
 def Entregar_DataFrames_DTE(ruta_xml):
@@ -14,4 +14,4 @@ def Entregar_DataFrames_DTE(ruta_xml):
         Exportar_df_excel(df_R,"Referencia", proveedor)
 
 if __name__ == "__main__":
-    Entregar_DataFrames_DTE("Doc_Import/Factura.xml")
+    Entregar_DataFrames_DTE("_Doc_Import/Factura.xml")

@@ -1,8 +1,8 @@
-from importarXML import Cargar_datos_XML
-from exportarDf import Exportar_df_excel
-from importarOC import leer_oc
-from mergeXML_OC import merge_dataframes
-import gui
+from CONTROLLER.importarXML import Cargar_datos_XML
+from CONTROLLER.exportarDf import Exportar_df_excel
+from CONTROLLER.importarOC import leer_oc
+from MODELL.mergeXML_OC import merge_dataframes
+import VIEW.gui as gui
 from tkinter import messagebox
 
 def datos_entrada():
