@@ -26,47 +26,47 @@ def buscar_archivo_excel():
 def cancelar_operacion():
     global cancelado
     cancelado = True
-    root.quit()
+    ventana.quit()
     
 def procesar_archivos():
     if not ruta_archivo_xml or not ruta_archivo_excel:
         messagebox.showerror("Error", "Debe seleccionar ambos archivos: XML y Excel.")
     else:
-        root.quit()
+        ventana.quit()
 
 def create_gui():
-    global etiqueta_ruta_xml, etiqueta_ruta_excel, root
+    global etiqueta_ruta_xml, etiqueta_ruta_excel, ventana
 
-    root = tk.Tk()
-    root.title("Seleccionar los archivos ")
-    
+    ventana = tk.Tk()
+    ventana.title("Seleccionar los archivos ")
+    ventana.config(bg="lightblue")
     # Establecer un icono personalizado para la ventana '../miscelaneos/fsc.ico'  
     
     ruta_icon_ventana = os.path.join(os.path.dirname(__file__), '..', 'CONTROLLER', 'miscelaneos', 'fsc.ico')
-    root.iconbitmap(ruta_icon_ventana) 
+    ventana.iconbitmap(ruta_icon_ventana) 
     
     # Establecer un icono personalizado para la barra de tareas '../miscelaneos/Fsc_png.png'  
     ruta_icon_taskbar = os.path.join(os.path.dirname(__file__), '..','CONTROLLER', 'miscelaneos', 'Fsc_png.png')
     imagen_icon_taskbar = tk.PhotoImage(file=ruta_icon_taskbar)
-    root.iconphoto(True, imagen_icon_taskbar)
+    ventana.iconphoto(True, imagen_icon_taskbar)
     
     # Settear el tamaño de la ventana
-    root.geometry("350x250")  
+    ventana.geometry("350x250")  
     
-    tk.Label(root, text="Seleccionar archivo XML:").grid(row=0, column=0, padx=10, pady=10)
-    tk.Button(root, text="Buscar", command=buscar_archivo_xml).grid(row=0, column=1, padx=10, pady=10)
-    etiqueta_ruta_xml = tk.Label(root, text="")
+    tk.Label(ventana, text="Seleccionar archivo XML:", background="lightblue").grid(row=0, column=0, padx=10, pady=10)
+    tk.Button(ventana, text="Buscar", command=buscar_archivo_xml).grid(row=0, column=1, padx=10, pady=10)
+    etiqueta_ruta_xml = tk.Label(ventana, text="", background="lightblue")
     etiqueta_ruta_xml.grid(row=1, column=0, columnspan=2, padx=10, pady=10)
     
-    tk.Label(root, text="Seleccionar archivo Excel:").grid(row=2, column=0, padx=10, pady=10)
-    tk.Button(root, text="Buscar", command=buscar_archivo_excel).grid(row=2, column=1, padx=10, pady=10)
-    etiqueta_ruta_excel = tk.Label(root, text="")
+    tk.Label(ventana, text="Seleccionar archivo Excel:", background="lightblue").grid(row=2, column=0, padx=10, pady=10)
+    tk.Button(ventana, text="Buscar", command=buscar_archivo_excel).grid(row=2, column=1, padx=10, pady=10)
+    etiqueta_ruta_excel = tk.Label(ventana, text="", background="lightblue")
     etiqueta_ruta_excel.grid(row=3, column=0, columnspan=2, padx=10, pady=10)
     
-    tk.Button(root, text="Procesar Archivos Seleccionados", command=procesar_archivos).grid(row=4, column=0, padx=10, pady=10)
-    tk.Button(root, text="Cancelar", command=cancelar_operacion).grid(row=4, column=1, padx=10, pady=10)
+    tk.Button(ventana, text="Procesar Archivos Seleccionados", command=procesar_archivos).grid(row=4, column=0, padx=10, pady=10)
+    tk.Button(ventana, text="Cancelar", command=cancelar_operacion).grid(row=4, column=1, padx=10, pady=10)
     
-    root.mainloop()
+    ventana.mainloop()
 
 def obtener_path_archivos_seleccionados():
     return ruta_archivo_xml, ruta_archivo_excel, cancelado

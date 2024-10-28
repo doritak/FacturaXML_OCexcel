@@ -7,7 +7,7 @@ from tkinter import messagebox
 
 def datos_entrada():
     ruta_xml, ruta_excel, cancelado  = gui.obtener_path_archivos_seleccionados()
-    # ruta_xml = "Doc_Import/Factura.xml"
+
     if cancelado:
         print("La operación fue cancelada por el usuario.")
         return None, None
@@ -16,7 +16,6 @@ def datos_entrada():
         return None, None
     df_XML, df_DR, df_R, proveedor = Cargar_datos_XML(ruta_xml)
     
-    # ruta_excel = 'Doc_Import/OC nro 6791.xlsx'
     palabra = 'Código'
     df_OC = leer_oc(ruta_excel, palabra)
     # el nombre_columna es el nombre de la columna que se va a usar para hacer el merge, en este caso es el código del producto que se encuentra tanto en la OC como en la factura

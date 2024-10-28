@@ -1,6 +1,9 @@
-import pandas as pd
-from CONTROLLER.miscelaneos.nombrar_archivos import Nombrar_archivo
+import sys
 import os
+import pandas as pd
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from CONTROLLER.miscelaneos.nombrar_archivos import Nombrar_archivo
+
 
 def Exportar_df_excel(df, tipo, proveedor:str):
     """
@@ -14,12 +17,19 @@ def Exportar_df_excel(df, tipo, proveedor:str):
     Side Effects:
         Crea un archivo Excel en la ruta especificada y muestra un mensaje de éxito en la consola.
     """
+    
     # Obtener la ruta absoluta del directorio actual
     directorio_actual = os.path.dirname(os.path.abspath(__file__))
+    # print(f"direcotrio actual: {directorio_actual}")
+    
     # Subir un directorio para ir a la carpeta principal
     dir_base = os.path.dirname(directorio_actual)
+    # print(f"dir_base: {dir_base}")
+    
     # Defino el directorio donde se guardará el archivo Excel
     dir_salida = os.path.join(dir_base, '_Excel_Resultado')
+    # print(f"dir_salida: {dir_salida}")
+    # print("#"*50)
     
     # Crea el directorio si no existe
     if not os.path.exists(dir_salida):
