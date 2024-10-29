@@ -5,18 +5,6 @@ from openpyxl import load_workbook
 # Agrega la raiz del proyecto a la ruta Python 
 # sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-def cargar_excel_workbook(ruta_excel):
-    ruta_absoluta = os.path.abspath(ruta_excel)
-    print(ruta_absoluta)
-    if not os.path.exists(ruta_absoluta):
-        print(f"El archivo no existe: {ruta_absoluta}")
-        return None
-    try:
-        workbook = load_workbook(filename=ruta_absoluta, data_only=True)
-        return workbook
-    except Exception as e:
-        print(f"Error cargando workbook: {e}")
-        return None
 
 def encontrar_palabra_celda(ruta_excel, palabra):
     """
@@ -28,9 +16,7 @@ def encontrar_palabra_celda(ruta_excel, palabra):
         tuple: Una tupla (fila, columna) que indica la posición de la celda que contiene la palabra.
                Si la palabra no se encuentra, devuelve (None, None).
     """
-    # workbook = load_workbook(filename=ruta_excel, data_only=True)
-    workbook = cargar_excel_workbook(ruta_excel)
-    print(workbook)
+    workbook = load_workbook(filename=ruta_excel, data_only=True)
     hoja = workbook.active
     
     for fila in hoja.iter_rows():
@@ -54,7 +40,7 @@ def eliminar_columnas_vacias(df,cantidad_null):
     
     return df_limpio
 
-def leer_oc(archivo, palabra):
+def leer_oc(archivo, palabra,ult_col):
     """
     Lee un archivo Excel y extrae los datos a partir de una palabra clave específica.
     Parameters:
@@ -78,33 +64,49 @@ def leer_oc(archivo, palabra):
     # workbook = cargar_excel_workbook(archivo)
     # hoja = workbook.active
     # ult_col = hoja.max_column
-    ult_col = 14
+    # ult_col = 14
     ult_col_letra = chr(64 + ult_col)
     
     # Leer los datos a partir de la celda encontrada
-    df = pd.read_excel(archivo, header=inicio_fila-1, usecols=f"{inicio_col_letra}:{ult_col_letra}")
+    df = pd.read_excel(archivo, header=inicio_fila-1, usecols=f"{inicio_col_letra}:{ult_col_letra}", dtype={"Código": str})
     
-    # Busque la primera fila en blanco y filtre el DataFrame
-    for i, row in df.iterrows():
-        if row.isnull().all():
+    # Busque la primera fila en blanco ahí break y no siga leyendo y filtre el DataFrame
+    for i, fila in df.iterrows():
+        if fila.isnull().all():
             df = df.iloc[:i]
             break
     
+    
     df = eliminar_columnas_vacias(df, 80)
-    # Reemplace los valores NaN con 0 en las columnas numéricas y convierta las columnas a números, las que son objetos quedan igual
-    df = df.infer_objects(copy=False)
-    df[df.select_dtypes(include=['number']).columns] = df.select_dtypes(include=['number']).fillna(0)
+    
+    # tengo que asegurarme que la columna Código sea string
+    if "Código" in df.columns:
+        df["Código"] = df["Código"].astype(str)
 
+    # adivima mejor el tipo de datos que es un objeto
+    df = df.infer_objects(copy=False)
+    # df = df.map(lambda x: '' if pd.isna(x) or x == 0 else x)
+
+    
+    # Reemplace los valores NaN con 0 en las columnas numéricas y convierta las columnas a números, las que son objetos quedan igual
+    numeric_cols = df.select_dtypes(include=['number']).columns
+    df[numeric_cols] = df[numeric_cols].fillna(0)
+    df = df.fillna("")
+    
     return df
 
 if __name__ == '__main__':
 
-    archivo = 'XML OC Excel/../_Doc_Import/OC nro 6791.xlsx'
-    palabra = 'Código'
+    # archivo = 'XML OC Excel/../_Doc_Import/OC nro 6791.xlsx'
+    # palabra = 'Código'
+    # num_col = 14
     
-    # archivo = 'XML OC Excel/../_Doc_Import/28-10-2024_LIOI_No_Borrar.xlsx'
-    # palabra = 'Nro_Linea'
+    archivo = 'XML OC Excel/../_Doc_Import/28-10-2024_LIOI_No_Borrar.xlsx'
+    palabra = 'Nro_Linea'
+    num_col = 26
     
-    df = leer_oc(archivo, palabra)
+    df = leer_oc(archivo, palabra,num_col)
+    print("AQUIIIIIIIIIIII")
+    print(df.dtypes)
     print(df)
     

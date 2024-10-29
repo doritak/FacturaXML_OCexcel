@@ -18,18 +18,16 @@ def Exportar_df_excel(df, tipo, proveedor:str):
         Crea un archivo Excel en la ruta especificada y muestra un mensaje de éxito en la consola.
     """
     
-    # Obtener la ruta absoluta del directorio actual
-    directorio_actual = os.path.dirname(os.path.abspath(__file__))
-    # print(f"direcotrio actual: {directorio_actual}")
-    
-    # Subir un directorio para ir a la carpeta principal
-    dir_base = os.path.dirname(directorio_actual)
-    # print(f"dir_base: {dir_base}")
-    
-    # Defino el directorio donde se guardará el archivo Excel
-    dir_salida = os.path.join(dir_base, '_Excel_Resultado')
-    # print(f"dir_salida: {dir_salida}")
-    # print("#"*50)
+    # Obtener el directorio donde está el ejecutable (o script, si se ejecuta como script)
+    if getattr(sys, 'frozen', False):
+        # Si es un ejecutable
+        directorio_base = os.path.dirname(sys.executable)
+    else:
+        # Si se ejecuta como script de Python
+        directorio_base = os.path.dirname(os.path.abspath(__file__))  
+    # Crear el directorio de salida relativo al directorio del ejecutable
+    dir_salida = os.path.join(directorio_base,"..", "_Excel_Resultado")
+
     
     # Crea el directorio si no existe
     if not os.path.exists(dir_salida):

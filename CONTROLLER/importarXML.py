@@ -1,5 +1,9 @@
+import sys
+import os
 import pandas as pd
 import xml.etree.ElementTree as ET
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from CONTROLLER.miscelaneos.nombrar_archivos import Calcular_fecha
 
 
@@ -110,6 +114,7 @@ def Cargar_datos_XML(ruta_xml):
         })
     
     df = pd.DataFrame(data)
+    
     # Aquí valido si son vacios o nos datos de Doc. Referencias y Descuentos y Recargos. 
     if bool(DescRecargo):
         df_DR = pd.DataFrame(DescRecargo)
@@ -123,7 +128,13 @@ def Cargar_datos_XML(ruta_xml):
         
     return df, df_DR, df_R, nombre_proveedor
 
-
+if __name__ == '__main__':
+    archivo = 'XML OC Excel/../_Doc_Import/Factura.xml'
+    df, df_DR, df_R, nombre_proveedor = Cargar_datos_XML(archivo)
+    print(df)
+    print(df_DR)
+    print(df_R)
+    print(nombre_proveedor)
         
 
 

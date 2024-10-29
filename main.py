@@ -17,7 +17,8 @@ def datos_entrada():
     df_XML, df_DR, df_R, proveedor = Cargar_datos_XML(ruta_xml)
     
     palabra = 'Código'
-    df_OC = leer_oc(ruta_excel, palabra)
+    num_col_max_leer = 14
+    df_OC = leer_oc(ruta_excel, palabra, num_col_max_leer)
     # el nombre_columna es el nombre de la columna que se va a usar para hacer el merge, en este caso es el código del producto que se encuentra tanto en la OC como en la factura
     nombre_columna = 'Código'
     df = merge_dataframes(df_XML, df_OC, nombre_columna)
